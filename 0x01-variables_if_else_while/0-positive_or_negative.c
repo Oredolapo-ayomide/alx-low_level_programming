@@ -1,11 +1,11 @@
-#include <stdlib.h>
+#include <stdio.h>
 
-#include <time.h>
-/* main - prints variable */
+/**
+ * main - entry point
+ * Return: Always 0
+ */
 
-/* Return: Always 0 */
 int main(void)
-
 {
 	int n;
 
