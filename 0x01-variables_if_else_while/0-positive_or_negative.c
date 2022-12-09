@@ -1,3 +1,9 @@
+#include <stdlib.h>
+
+#include <time.h>
+/* main - prints variable */
+
+/* Return: Always 0 */
 int main(void)
 
 {
