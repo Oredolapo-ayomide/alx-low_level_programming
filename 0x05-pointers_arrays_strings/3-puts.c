@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * main - check the code
@@ -8,16 +7,11 @@
 
 int main(void)
 {
-	int n = 402;
+	char str[];
 
-	printf("n = %d\n", n);
+	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
 
-	int *p = &n;
-	*p = 98;
-
-	printf("n = %d\n", n);
-
+	_puts("%s\n", str);
 
 	return (0);
-
 }
