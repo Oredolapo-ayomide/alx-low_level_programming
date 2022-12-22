@@ -6,16 +6,18 @@
  * reverse_array - a function that reverses the content of an array of integers
  * @a: array
  * @n: number of elements of the array
- * Return: nothing
  */
 
 void reverse_array(int *a, int n)
 {
-	for (int i = 0; i < n / 2; i++)
-	{
-		int temp = a[i];
+	int tmp, index;
 
-		a[i] = a[n - 1 - i];
-		a[n - 1 - i] = temp;
+	for (index = n - 1; index > n / 2; index--)
+	{
+		tmp = a[n - 1 - index];
+
+		a[n - 1 - index] = a[index];
+
+		a[index] = tmp;
 	}
 }
