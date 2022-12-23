@@ -10,7 +10,7 @@ char *leet(char *s)
 {
 	int i;
 
-	c = 0;
+	int c = 0;
 
 	int lower[] = {97, 101, 111, 116, 108};
 
