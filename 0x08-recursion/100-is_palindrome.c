@@ -2,23 +2,10 @@
 #include <stdio.h>
 
 /**
- * _strlen_recursion - returns length of string
- * @s: string to cal length of
- * Return: length of string
- */
-
-int _strlen_recursion(char *s)
-{
-	if (*s == '\0')
-		return (0);
-	return (1 + _strlen_recursion(s + 1));
-}
-
-/**
  * check_pal - checks characters recursively
  * @s: string to check
  * @i: iterator
- * @len: length of string
+ * @len: length of a string
  * Return: 1 if palindrome, 0 if not
  */
 
@@ -29,6 +16,19 @@ int check_pal(char *s, int i, int len)
 	if (i >= len)
 		return (1);
 	return (check_pal(s, i + 1, len - 1));
+}
+
+/**
+ * _strlen_recursion - returns length of string
+ * @s: string to cal length of
+ * Return: length of string
+ */
+
+int _strlen_recursion(char *s)
+{
+	if (*s == '\0')
+		return (0);
+	return (1 + _strlen_recursion(s + 1));
 }
 
 /**
