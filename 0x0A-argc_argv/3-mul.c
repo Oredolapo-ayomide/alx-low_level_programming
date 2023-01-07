@@ -48,7 +48,6 @@ int _atoi(char *s)
 
 		i++;
 	}
-
 	if (f == 0)
 		return (0);
 	return (n);
@@ -78,6 +77,5 @@ int main(int argc, char *argv[])
 	result = num1 * num2;
 
 	printf("%d\n", result);
-
-	result (0);
+	return (0);
 }
